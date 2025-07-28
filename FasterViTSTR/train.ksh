@@ -1,0 +1,8 @@
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/evaluation --select_data MJ-ST --batch_ratio 0.5-0.5 --Transformation None --FeatureExtraction None --SequenceModeling None --Prediction None --Transformer --TransformerModel=faster_vit_0_224 --imgH 224 --imgW 224 --manualSeed=123  --sensitive --batch_size=192 --exp_name=DualFasterViTSTR_V0
+
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/evaluation --select_data MJ-ST --batch_ratio 0.5-0.5 --Transformation None --FeatureExtraction None --SequenceModeling None --Prediction None --Transformer --TransformerModel=faster_vit_1_224 --imgH 224 --imgW 224 --manualSeed=123  --sensitive --batch_size=192 --exp_name=DualFasterViTSTR_V1
+
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/evaluation --select_data MJ-ST --batch_ratio 0.5-0.5 --Transformation None --FeatureExtraction None --SequenceModeling None --Prediction None --Transformer --TransformerModel=faster_vit_2_224 --imgH 224 --imgW 224 --manualSeed=123  --sensitive --batch_size=192 --exp_name=DualFasterViTSTR_V2
+
+CUDA_VISIBLE_DEVICES=0 python3 train.py --train_data data_lmdb_release/training --valid_data data_lmdb_release/evaluation --select_data MJ-ST --batch_ratio 0.5-0.5 --Transformation None --FeatureExtraction None --SequenceModeling None --Prediction None --Transformer --TransformerModel=faster_vit_3_224 --imgH 224 --imgW 224 --manualSeed=123  --sensitive --batch_size=192 --exp_name=DualFasterViTSTR_V3
+
